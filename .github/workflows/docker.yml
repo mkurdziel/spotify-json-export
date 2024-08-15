@@ -61,6 +61,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: export_spotify_data.py
-          asset_name: export_spotify_data.py
+          asset_path: main.py
+          asset_name: spotify_json_export.py
           asset_content_type: text/x-python
