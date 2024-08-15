@@ -40,7 +40,7 @@ jobs:
       - name: Build and push Docker image
         run: |
           TAG_NAME=${GITHUB_REF##*/}
-          IMAGE_NAME="${{ secrets.DOCKER_USERNAME }}/spotify-export:${TAG_NAME}"
+          IMAGE_NAME="${{ secrets.DOCKER_USERNAME }}/spotify-json-export:${TAG_NAME}"
           docker build -t $IMAGE_NAME .
           docker push $IMAGE_NAME
 
